@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<!--
+FILE NAME: photographs.html
+WRITTEN BY: Michelle Duan
+WHEN: May, 2015
+         
+PURPOSE: Create a Photographs page for shahglasscollection.
+The page will contain a gallery of photographs of hemanshu and various
+artists at exhibitions. The only purpose of this page is to show these images.
+Captions for the images are beneath the photo when an a thumbnail is clicked on to
+show a larger version of the photo. 
+
+MODIFICATION HISTORY: Javascript code was added by Michelle Duan to the 
+document to make the thumbnails pop up larger images.
+Code for infobox and template were taken from hw7 and modified to be used here.
+-->
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">      
+    <title>Shah Glass Collection</title>
+    <link href="style.css" rel="stylesheet"> 
+    
+  </head>
+  
+  
+<body>
+<!--#include virtual="menu.part" -->
+
+
+
+<div id="photogallery">
+
+<!-- empty gallery to be populated by images from a folder of photos -->
+ <section id="gallery">
+    </section>
+ </div>
+
+<!-- template to be cloned for photos -->
+   <div id="template" class="hidden">
+   <div id="photos">
+        <img src="" width=100 alt="">
+        <span class="itemIndex hidden"></span>
+    </div>
+    </div>
+    
+<!--   overlay under infobox  -->
+<div id="overlay" class="hidden">
+    </div>
+
+<!-- 
+infobox is the larger version of the thumbnails. it is centered and opens 
+with an overlay underneath
+ -->
+ 
+<div id="infobox" class="hidden">
+      <p id="close">Close</p>
+      <br id="clear">
+      <img src="" height=500 alt="photo with artist">
+      <aside>
+        <p id="titleInBox"></p>
+        <input type="hidden" id="itemIndex">
+      </aside>
+    </div>
+
+<!-- links to external javascript file -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="photoData.js"></script>
+
+</body>
+</html>

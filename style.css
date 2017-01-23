@@ -1,0 +1,260 @@
+/*
+FILE NAME: style.css
+WRITTEN BY: Michelle Duan
+WHEN: May, 2015
+         
+PURPOSE: external style sheet for the enter shahglasscollection site.
+*/
+
+
+
+/*general styling for page*/
+body{width:1000px;
+	margin:auto;
+/* 
+	padding-left:60px;
+	padding-right:60px;
+ */
+	padding-top:20px;
+	padding-bottom:400px;
+	font-family: 'Telugu Sangam MN', cursive;
+	}
+
+
+
+/* horizontally aligns the nav bar*/
+nav div {display:inline-block;
+	margin: 0 auto;
+	margin:20px;
+ }
+
+/*style for items in nav bar*/
+.navitem a {
+    text-decoration: none;
+    color: #636363;
+}
+
+/*change color when nav item is hovered oveR*/
+.navitem a:hover{
+	color: black;
+	text-decoration: underline;
+}
+
+/* pretty centered nav bar*/
+nav {
+	margin-bottom:20px;
+	/*creates space between nav bar and page content*/
+	text-align:right;
+	border-top: 1px grey;
+	border-bottom: 1px grey;
+	float: right;
+	padding-top:35px;
+	font-size:14px;
+	}
+
+/*adds border to nav bar*/
+.container {
+	border-top: solid 1px #D4D4D4;
+	border-bottom: solid 1px #D4D4D4;
+	padding-bottom:5px;
+	margin-bottom:20px;
+	}
+	
+/*styles so logo is on the leftmost side of nav bar*/
+.logo {float:left;
+	display: inline-block;
+	padding:10px;}
+
+/*styling for welcome message on homepage*/
+.welcome {
+	width: 350px;
+	font-family: 'Telugu Sangam MN', cursive;
+	font-size:16px;
+	padding-left:30px;
+	letter-spacing: 1px;
+	}
+
+/*styling for randomDsiplay photos*/
+.img {
+	float: right;
+	font-size:26px;
+	font-variant: small-caps; /* default is `normal` */
+	}
+	
+/*styling for content in learnmore page*/
+#gallery_info {
+	width: 750px;
+	}
+
+#gallery_info a {
+	font-size:20px;
+	text-decoration: underline;}
+	
+#gallery_info p, #gallery_info img {
+	margin-left:50px;}
+
+
+
+/*photographs page*/
+#photos img {
+float: left;
+padding:10px;
+height:200px;
+width:200px;
+display: inline-block;
+margin: 5px;
+border: 1px solid #ccc;
+}
+
+#infobox #titleInBox {
+  text-transform: uppercase;
+  color: #555;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+#clear {
+clear: both;
+}
+
+/*overlay under infobox when an img is clicked on*/
+#overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 120%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1000;
+} 
+
+/*transformed point of reference to center of div and adjust positioning to center of page*/
+#infobox{
+left: 50%; 
+-webkit-transform: translate(-50%, 0); 
+position: absolute;
+  top: 5%;
+  background-color: #fff;
+  z-index: 2000;
+  border: 2px solid black;
+  text-align:center;
+  font-family: Nunito, sans-serif;
+ }
+ 
+ /*styling for img inside the main big infobox*/
+#infobox img {
+	padding-left:10px;
+	padding-right:10px;
+	margin: 0 auto;
+	}
+
+.hidden {
+  display: none;
+}
+
+/*closes infobox*/
+#close{
+  float: right;
+  margin: 5px;
+  font-size: small;
+  }
+
+#close:hover{
+  cursor: pointer;
+  color: #A00;
+  }
+
+#overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  z-index: 1;
+} 
+
+#photogallery #gallery {
+	padding-left:32px;
+	}
+
+
+
+/*artists page styling specifications*/
+
+#leftColumn #gallery {
+	padding-top:0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	}
+	
+#name {font-size:30px;
+	color: #636363;
+	font-variant: small-caps;
+	/* margin-top:10px; */
+	margin-bottom:0px;
+	}
+
+#column1, #column2, #column3, #column4{
+float:left;
+padding:18px;
+font-size:20px;
+text-align:center;
+}
+
+#artistNames {
+	margin-left: 0;
+    margin-right: 0;
+    width: 95%;
+	text-align:center;
+	padding-left:50px;
+	clear:both;}
+
+#artistNames p:hover {
+	color: #CB000F;
+	}
+
+#artistNames p {
+	color: dark grey;
+	font-variant: small-caps;
+}
+
+#artistNames p:active {text-decoration: underline;}
+
+/*open div when p is clicked*/
+#openOnClick {
+	overflow:hidden;
+	display:none;
+	border-top: 3px solid grey;
+	border-bottom:3px solid grey;
+	margin-top:5px;
+	margin-bottom:5px;
+	width:90%;
+	margin:auto;
+}
+
+#rightColumn {
+	float:right;
+	width:380px;
+	padding-bottom:10px;
+	padding-top:15px;
+}
+
+#leftColumn {
+	float:left;
+	width: 500px;
+	padding-bottom:10px;
+	}
+
+#photos2 img {
+float: left;
+padding:3px;
+height:100px;
+width:100px;
+display: inline-block;
+margin: 1px;
+border: 1px solid #ccc;
+}	
+

@@ -1,0 +1,15 @@
+<section class="container">
+    &nbsp;
+<!--     links back to homepage if logo is clicked on -->
+<a href="homepage.html"><img class="logo" src="LogoFiles/newlogo.gif" height="95" width="250" alt="logo"></a>
+
+
+    <nav>
+      <div class="navitem"><a href="homepage.html">HOMEPAGE</a></div>
+      <div class="navitem"><a href="artists.html">ARTISTS</a></div>
+      <div class="navitem"><a href="photographs.html">PHOTOGRAPHS</a></div>
+      <div class="navitem"><a href="learnmore.html">LEARN MORE</a></div>
+    </nav>
+    <div style="clear:both"></div>
+    
+</section>

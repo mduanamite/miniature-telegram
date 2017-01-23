@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+FILE NAME: homepage.html
+WRITTEN BY: Michelle Duan
+WHEN: May, 2015
+         
+PURPOSE: Create a homepage for shahglasscollection.com.
+The homepage will contain a welcome message paragraph and a slideshow 
+of rotating photos selected from a gallery. It will also have a navbar.
+
+MODIFICATION HISTORY: Javascript code was added by Michelle Duan to the 
+document to make the rotating slide show possible.
+It was found that attribute "name" was required for slideshow.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">      
+    <title>Shah Glass Collection</title>
+    <link href="style.css" rel="stylesheet">  
+  </head>
+  
+  
+<body>
+<!-- nav bar goes here -->
+
+<!--#include virtual="menu.part" -->
+
+
+<!-- html for rotating slide show - initiate show with an image and set width/height to be fixed -->
+<section class="img">
+<div id="name">""</div>
+<img name="slide" src="Glass/584.jpg" height="500" width="500"/>
+</section>
+
+<!-- welcome paragraph supplied by Hemanshu to be displayed on left side of the page -->
+<div class="welcome">
+<h3> Welcome. </h3>
+<p>
+This website is my attempt to share my collection and my journey in the world of studio glass.  
+For this scientist, who used clear borosilicate glass apparatus in the lab, 
+studio glass, with its vibrant and often riotous color palette, was an exciting new world.  
+I have enjoyed learning about the use of glass as an artistic medium, 
+have marveled at the amazing works of art and have had the privilege to meet many wonderful people - 
+artists, gallery owners and fellow collectors.
+</p>
+</div>
+
+	<!-- links to external javascript sheet -->
+	<script src="randomDisplay.js"></script>
+	
+	
+</body>

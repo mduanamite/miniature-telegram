@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+
+<!--
+FILE NAME: artists.html
+WRITTEN BY: Michelle Duan
+WHEN: May, 2015
+         
+PURPOSE: Create an artists page that lists the name of the artists in four 
+columns with clickable names (p).
+Each artist section will have the same layout - an image of the artist and his/her name 
+on the right, a youtube video if applicable and information about the artist (if available from client)   in a paragraph to the left of the photos, and thumbnails of work below the paragraph
+There will be one generic div and arrays of artist information that can be looped through and indexed
+to replace current info in the generic div accoding to which artist is clicked on.
+
+MODIFICATION HISTORY: Javascript code was added by Michelle Duan 
+to make openOnClick div open when an artist name is clicked and display
+the proper info.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">      
+    <title>Shah Glass Collection</title>
+    <link href="style.css" rel="stylesheet">  
+  </head>
+  
+  
+<body>
+<!--#include virtual="menu.part" -->
+
+
+
+<!-- opens div with artist info and pushes artist names down  -->
+<div id="openOnClick">
+<div id="leftColumn">
+<!-- empty name header to be filled by js -->
+	<h3 id="name"></h3>
+	
+<!-- empty desctiption paragraph to be filled by js -->
+	<p id="description"></p>
+	
+<!-- empty gallery to be filled by js -->
+	<section id="gallery"></section>
+    
+<!--     template for artist work thumbnails to be cloned into gallery -->
+   <div id="template" class="hidden">
+   <div id="photos2">
+        <img class="" src="" width=50 alt="">
+        <span class="itemIndex hidden"></span>
+    </div>
+    </div>
+
+<!-- hidden overlay div shows itself after thumbnails is clicked on -->
+<div id="overlay" class="hidden"></div>
+
+
+<div id="infobox" class="hidden">
+      <p id="close">Close</p>
+      <br id="clear">
+      <img src="" height=500 alt="photo with artist">
+      <aside>
+        <p id="titleInBox"></p>
+        <input type="hidden" id="itemIndex">
+      </aside>
+</div>
+
+</div>
+
+<!-- float to the right -->
+<div id="rightColumn">
+ &nbsp;
+	<img class="artistPortrait" src="" width=370 alt="artist photo">
+	<iframe id="iframe" width="370" height="208" src="" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+
+<!-- some artist names are commented out because their information is not complete yet -->
+<div id="artistNames">
+<div id="column1">
+<p id="bachorik">Vladimir Bachorik</p>
+<p id="libensky">Jaroslava Brychtova & <br>Stanislav Libensky</p>
+<!-- <p id="callan">Nancy Callan</p> -->
+<p id="clayman">Dan Clayman</p>
+<p id="dam">Steffan Dam</p>
+<!-- 
+<p id="gotzens">Detlef Gotzens</p>
+<p id="heaney">Colin Heaney</p>
+ -->
+</div>
+
+<div id="column2">
+<p id="fujita">Kyohei Fujita</p>
+<!-- <p id="lepisto"> Jeremy Lepisto</p> -->
+<p id="marioni">Dante Marioni</p>
+<p id="marquis">Richard Marquis</p>
+<!-- <p id="matsushima">Iwao Matsushima</p> -->
+<p id="micheluzzi">Massimo Micheluzzi</p>
+<!-- <p id="montini">Milissa Montini</p> -->
+</div>
+
+<div id="column3">
+<!-- <p id="mohl">Tobias Mohl</p> -->
+<p id="moje">Klaus Moje</p>
+<!-- 
+<p id="morris">William Morris</p>
+<p id="munsen">Mel Munsen</p>
+ -->
+<p id="myers">Joel Philip Myers</p>
+<!-- 
+<p id="ohira">Yoichi Ohira</p>
+<p id="patti">Tom Patti<p>
+<p id="peiser">Mark Peiser<p>
+<p id="salvadore">Davide Salvadore</p>
+<p id="sarmiento">Jeffrey Sarmiento</p>
+ -->
+ <p id="sibony">Anne-Lise Riond Sibony</p>
+</div>
+
+<div id="column4">
+<!-- <p id="stern">Ethan Stern</p> -->
+<p id="surgent">April Surgent</p>
+<p id="tagliapietra">Lino Tagliapietra</p>
+<!-- <p id="varga">Emma Varga</p> -->
+<p id="wolff">Ann Wolff</p>
+<!-- <p id="yagi">Yoko Yagi</p> -->
+</div>
+
+</div>
+
+<!-- link to external js code -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="artistDiv.js"></script>
